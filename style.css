@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h3,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+.calculator,
+.graph {
+  border: 1px solid #000;
+}
+
+.calculator {
+  width: 600px;
+  margin: 100px auto;
+}
+
+.logo {
+  box-sizing: content-box;
+  max-width: 30px;
+  height: 60px;
+  object-fit: contain;
+  padding: 0 10px;
+  border-right: 3px solid #000;
+}
+
+.graph {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.brand-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 120px;
+}
+
+.label-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.skyscrapper {
+  display: flex;
+  height: 30px;
+  border: 1px solid #000000;
+  border-left: none;
+}
+
+.skyscrapper--backblaze {
+  background-color: #eb2929;
+}
+.skyscrapper--bunny {
+  background-color: #ebbe29;
+}
+.skyscrapper--scaleway {
+  background-color: #b429eb;
+}
+.skyscrapper--vultr {
+  background-color: #3688f3;
+}
+
+.tomb {
+  width: 400px;
+}
+
+.range-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.range {
+  display: flex;
+}

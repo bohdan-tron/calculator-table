@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="graphs">
+      <div class="graph">
+        <div class="brand-wrapper">
+          <h3 class="brand">
+            backblaze.com
+          </h3>
+        </div>
+        <img src="./assets/backblaze.png" alt="backblaze logo" class="logo">
+        <div class="tomb">
+          <div id="backblazeTomb" class="skyscrapper skyscrapper--backblaze"></div>
+          <div id="backblazeCosts"></div>
+        </div>
+      </div>
+
+      <div class="graph">
+        <div class="brand-wrapper">
+          <h3 class="brand">
+            bunny.net
+          </h3>
+          <label class="label-wrapper">
+            <input type="radio" name="bunny" id="HDD">
+            HDD
+          </label><br>
+          <label class="label-wrapper">
+            <input type="radio" name="bunny" id="SSD">
+            SSD
+          </label>
+        </div>
+        <img src="./assets/bunny.png" alt="bunny.net logo" class="logo">
+        <div class="tomb">
+          <div id="bunnyTomb" class="skyscrapper skyscrapper--bunny"></div>
+          <div id="bunnyCosts"></div>
+        </div>
+      </div>
+
+      <div class="graph">
+        <div class="brand-wrapper">
+          <h3 class="brand">
+            scaleway
+          </h3>
+          <label class="label-wrapper">
+            <input type="radio" name="scaleway" id="multi">
+            Multi
+          </label><br>
+          <label class="label-wrapper">
+            <input type="radio" name="scaleway" id="single">
+            Single
+          </label>
+        </div>
+        <img src="./assets/scaleway.png" alt="scaleway logo" class="logo">
+        <div class="tomb">
+          <div id="scalewayTomb" class="skyscrapper skyscrapper--scaleway"></div>
+          <div id="scalewayCosts"></div>
+        </div>
+      </div>
+
+      <div class="graph">
+        <div class="brand-wrapper">
+          <h3 class="brand">
+            vultr
+          </h3>
+        </div>
+        <img src="./assets/vultr.png" alt="vultr logo" class="logo">
+        <div class="tomb">
+          <div id="vultrTomb" class="skyscrapper skyscrapper--vultr"></div>
+          <div id="vultrCosts"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="range-wrapper">
+      <label class="range">
+        Storage:
+        <input 
+          id="storageRange" 
+          type="range" 
+          min="1" 
+          max="1000"
+          step="1"
+        >
+        <div id="storageValue"></div>
+      </label>
+
+      <label class="range">
+        Transfer:
+        <input 
+          id="transferRange" 
+          type="range" 
+          min="1"
+          max="1000"
+          step="1"
+        >
+        <div id="transferValue"></div>
+      </label>
+    </div>
+  </div>
+
+  <script src="App.js"></script>
+</body>
+</html>
