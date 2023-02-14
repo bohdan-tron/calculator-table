@@ -1,4 +1,4 @@
 # Тестове завдання: таблиця з калькулятором
 ## Screenshots
-[Wide screen](assets/wide-screen.png)
-[High screen](assets/high-screen.png)
+![Wide screen](https://github.com/bohdan-tron/calculator-table/blob/main/assets/wide-screen.png?raw=true)
+![High screen](https://github.com/bohdan-tron/calculator-table/blob/main/assets/high-screen.png?raw=true)
