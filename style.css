@@ -9,7 +9,6 @@ input {
   padding: 0;
 }
 
-.calculator,
 .graph {
   border: 1px solid #000;
 }
@@ -18,6 +17,7 @@ input {
   width: 600px;
   margin: 100px auto;
 }
+
 
 .logo {
   box-sizing: content-box;
@@ -82,4 +82,37 @@ input {
 
 .range {
   display: flex;
+}
+
+@media only screen and (max-width: 599px) {
+  .calculator {
+    transform: rotate(-90deg);
+    margin: 250px 0;
+    position: relative;
+  }
+
+  .logo {
+    max-width: 35px;
+    padding: 0 15px;
+    transform: rotate(90deg);
+    border-right: none;
+    border-top: 3px solid #000;
+  }
+
+  .brand-wrapper {
+    transform: rotate(90deg);
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+  .range-wrapper {
+    position: absolute;
+    top: 110px;
+    left: -150px;
+    width: 260px;
+    flex-direction: column;
+    transform: rotate(90deg);
+  }
 }
