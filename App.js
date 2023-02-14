@@ -80,9 +80,13 @@ const calculations = () => {
   const calcResultBunnySSD = calcBunnySSD(storageVal, transferVal);
 
   if (bunnyRadioHDD.checked) {
-    result.bunny = calcResultBunnyHDD < result.bunny ? +calcResultBunnyHDD : result.bunny;
+    result.bunny = calcResultBunnyHDD < result.bunny 
+      ? +calcResultBunnyHDD 
+      : result.bunny;
   } else {
-    result.bunny = calcResultBunnySSD < result.bunny ? +calcResultBunnySSD : result.bunny;
+    result.bunny = calcResultBunnySSD < result.bunny 
+      ? +calcResultBunnySSD 
+      : result.bunny;
   }
 
   const calcResultBackblaze = calcBackblaze(storageVal, transferVal);
@@ -97,7 +101,6 @@ const calculations = () => {
     result.vultr = +calcResultVultr;
   }
 
-  console.log(result)
   return result;
 };
 
@@ -159,7 +162,6 @@ const onRangeChange = (event) => {
 
 window.onload = (e) => {
   onRangeChange(e);
-  console.log(transferRange, transferValue)
   transferValue.innerText = `${transferRange.value}GB`;
 };
 
